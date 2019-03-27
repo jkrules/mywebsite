@@ -1,0 +1,311 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:18px;
+  font-family:'Roboto', 'Roboto';
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+  scroll-behavior: smooth;
+}
+
+/* Header Parallax Element Style*/
+.paral {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.parah {
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.parah p {
+  font-size: 24px;
+  color:#f5f5f5;
+  text-align: center;
+  line-height: 60px;
+}
+
+.parah h1 {
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 33vh;
+  line-height: 80px;
+}
+
+.parah h3 {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 10vh;
+  line-height: 80px;
+}
+
+/* Paragraph for Parallax Section */
+.paral p {
+  font-size: 16px;
+  color:#666;
+  text-align: left;
+}
+
+/* Heading for Parallax Section */
+.paral h1 {
+  color: rgba(255,255,255,1);
+  font-size: 60px;
+  text-align: center;
+  line-height: 100px;
+  text-shadow: 4px 3px 0px rgba(0,0,0,0.3);
+}
+
+.paral h3 {
+  color: rgba(255,255,255,1);
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 20px;
+  text-shadow: 4px 3px 0px rgba(0,0,0,0.3);
+}
+
+
+/* Image for Parallax Section */
+.paralsec {
+  background-image: url("../img/Titleimage.jpg");
+}
+
+.paralsec1 {
+  background-image: url("../img/ParallaxBackground1.jpg");
+}
+
+.paralsec2 {
+  background-image: url("../img/ParallaxBackground2.jpg");
+}
+
+.paralsec3 {
+  background-image: url("../img/ParallaxBackground3.jpg");
+}
+
+
+/* Remove Bottom Margin from Jumbotron */
+.jumbotron{
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.paralsec .border2{
+  background-color: rgba(0,0,0,0.5);
+  line-height: 1.5;
+  padding: 10px 10px;
+  width: auto;
+  margin: 20px auto;
+  position: relative;
+  word-spacing: -20px;
+}
+
+.section-light{
+  text-align: center;
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-light h2 {
+  font-size: 60px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+.section-light h6 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.section-dark{
+  text-align: left;
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.section-dark h2 {
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.section-dark h6 {
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.navbar {
+  width: 100%;
+  box-shadow: 0px 0px 4px 5px rgba(0,0,0,0.08);
+}
+
+.navbar-dark{
+  background-color: #aa66cc;
+  width: 100%;
+  border-width: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color: #fff;
+}
+
+.secondary-color {
+  color: #fff;
+}
+
+.mb-1 {
+  margin-bottom: 0;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.mb-1, .my-1 {
+  margin-bottom: 0;
+}
+
+.card {
+  border: 5px solid #aa66cc;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card img {
+  border-radius: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 5px 3px 2px rgba(0,0,0,0.2);
+}
+
+.card:hover img{
+  transform: scale(1.08);
+}
+
+.image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.btn-primary{
+  background-color: #aa66cc;
+  border-color: #aa66cc;
+}
+
+.btn-primary:hover {
+  background-color: #9e52cf;
+  border-color: #aa66cc;
+}
+
+.vertical-align-middle {
+    vertical-align: middle;
+}
+
+.padding-bottom-3 {
+    padding-bottom: 3px;
+}
+
+.marginbm {
+  margin-bottom: 50px;
+}
+
+img.resize {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+img.shadows {
+  box-shadow: 5px 3px 2px rgba(0,0,0,0.2);
+}
+
+.striped-border {
+    border: 2px dashed #aa66cc;
+    min-width: 300px;
+    width: 35%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imageposition {
+  position: 50%, 50vh;
+}
+
+.paralsec img{
+  position: absolute;
+  --a: 50vh;
+  --b: 8vw;
+  top:calc(var(--a) - var(--b));
+  left: 10vw;
+  width: 80vw;
+  height: 16vw;
+  Opacity: 0.75;
+}
+
+.project {
+  padding: 0px;
+  position: relative;
+  text-align: center;
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+
+.project img {
+  transition: all 0.4s ease-in-out;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 30px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  color: #fff;
+}
+
+.project:hover .centered {
+  opacity: 1;
+}
+
+.project:hover img {
+  opacity: 0.4;
+  -webkit-filter: blur(7px); /* Safari 6.0 - 9.0 */
+  filter: blur(7px);
+}
+
+img.resize2 {
+  min-width: 100%;
+  min-height:100%;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  opacity:1
+}
+
+.section-dark a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
