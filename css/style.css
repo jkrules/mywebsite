@@ -362,4 +362,13 @@ img.resize2 {
     margin-left: calc(var(--a) - var(--b) - var(--c));
     width: 70vw;
   }
+
+  .row .card {
+    --a: 15vw;
+    --b: 2rem;
+    --c: 15px;
+    margin-left: calc(var(--a) - var(--b));
+    width: 70vw;
+  }
+  }
 }
