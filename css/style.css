@@ -156,6 +156,7 @@ img.shadows {
     margin-top: 0%;
     opacity:1
   }
+
 }
 
 .striped-border {
@@ -296,6 +297,13 @@ img.shadows {
    .padding {
      padding: 4rem 6rem;
    }
+}
+
+@media only screen and (max-width : 768px) {
+
+  .parallax1 h2 {
+    font-size: 40px;
+  }
 }
 
 .parallax2 {
@@ -455,4 +463,40 @@ img.resize2 {
     width: 70vw;
   }
   }
-}
+
+  @media only screen and (max-width : 580px) {
+
+    .section-light h2 {
+      font-weight: bold;
+      font-size: 40px;
+      padding-top: 10px;
+    }
+
+    .section-dark h2 {
+      font-weight: bold;
+      font-size: 40px;
+      padding-top: 10px;
+    }
+
+    .parallax1 h1 {
+      font-weight: bold;
+      font-size: 40px;
+      padding-top: 10px;
+    }
+
+    .parallax2 h1 {
+      font-weight: bold;
+      font-size: 40px;
+      padding-top: 10px;
+    }
+
+    .parallax3 h1 {
+      font-weight: bold;
+      font-size: 40px;
+      padding-top: 10px;
+    }
+
+    .striped-border {
+        min-width: 200px;
+    }
+  }
