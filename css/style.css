@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body, html{
   height:100%;
   margin:0;
@@ -6,107 +10,78 @@ body, html{
   font-weight:400;
   line-height:1.8em;
   color:#666;
-  scroll-behavior: smooth;
 }
 
-/* Header Parallax Element Style*/
-.paral {
-  min-height: 400px;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: 50% 50%;
+.primary-color {
+  background-color: #aa66cc;
 }
 
-.parah {
-  min-height: 100vh;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: 50% 50%;
+.navbar {
+  width: 100%;
+  box-shadow: 0px 0px 4px 5px rgba(0,0,0,0.08);
 }
 
-.parah p {
-  font-size: 24px;
-  color:#f5f5f5;
-  text-align: center;
-  line-height: 60px;
+.navbar-dark{
+  background-color: #aa66cc;
+  width: 100%;
+  border-width: 0;
 }
 
-.parah h1 {
+.navbar-dark .navbar-nav .nav-link{
   color: #fff;
-  font-size: 4rem;
-  text-align: center;
-  padding-top: 33vh;
-  line-height: 80px;
 }
 
-.parah h3 {
-  color: #fff;
-  font-size: 2rem;
-  text-align: center;
-  padding-top: 10vh;
-  line-height: 80px;
+.mynav-1 {
+  margin-bottom: 0;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-/* Paragraph for Parallax Section */
-.paral p {
-  font-size: 16px;
-  color:#666;
-  text-align: left;
+.mynav-1 {
+  margin-bottom: 0;
 }
 
-/* Heading for Parallax Section */
-.paral h1 {
-  color: rgba(255,255,255,1);
-  font-size: 60px;
-  text-align: center;
-  line-height: 100px;
-  text-shadow: 4px 3px 0px rgba(0,0,0,0.3);
+.navbar-toggler {
+  border: 0px;
 }
 
-.paral h3 {
-  color: rgba(255,255,255,1);
-  font-size: 30px;
-  text-align: center;
-  line-height: 40px;
-  margin-bottom: 20px;
-  text-shadow: 4px 3px 0px rgba(0,0,0,0.3);
+.navbar-dark .navbar-toggler-icon {
+background-image: url("https://mdbootstrap.com/img/svg/hamburger7.svg?color=fff");
 }
 
-
-/* Image for Parallax Section */
-.paralsec {
-  background-image: url("../img/Titleimage.jpg");
+.MyTitle {
+    position: relative;
+    height: 100vh;
+    background-image: url("../img/Titleimage.jpg");
+    background-size:  cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
 }
 
-.paralsec1 {
-  background-image: url("../img/ParallaxBackground1.jpg");
+.logo {
+  height: 16vw;
+  width: 80vw;
+  background-image: url("../img/Title2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80vw, 16vw;
+  position: absolute;
+  --a: 59px;
+  --b: 50%;
+  top: calc(var(--b) - 0.5 * var(--a));
+  margin-top: -8vw;
+  margin-left: 10vw;
+  opacity: 0.75;
 }
 
-.paralsec2 {
-  background-image: url("../img/ParallaxBackground2.jpg");
-}
-
-.paralsec3 {
-  background-image: url("../img/ParallaxBackground3.jpg");
-}
-
-
-/* Remove Bottom Margin from Jumbotron */
 .jumbotron{
   margin-top: 0;
   margin-bottom: 0;
   border-radius: 0;
   padding: 4rem 2rem;
-}
-
-.paralsec .border2{
-  background-color: rgba(0,0,0,0.5);
-  line-height: 1.5;
-  padding: 10px 10px;
-  width: auto;
-  margin: 20px auto;
-  position: relative;
-  word-spacing: -20px;
 }
 
 .section-light{
@@ -125,6 +100,174 @@ body, html{
 .section-light h6 {
   font-size: 20px;
   font-weight: bold;
+}
+
+img.resize {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  margin-top: 35%;
+  margin-bottom: auto;
+}
+
+img.shadows {
+  box-shadow: 5px 3px 2px rgba(0,0,0,0.2);
+  transition: all 0.4s ease-in-out;
+}
+
+@media only screen and (min-width : 1150px) {
+  img.resize {
+    margin-top: 20%;
+  }
+}
+
+@media only screen and (min-width : 1200px) {
+  img.resize {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (min-width : 1300px) {
+  img.resize {
+    margin-top: 0%;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+  img.resize {
+    min-width: 320px;
+    min-height: 320px;
+    max-width: 330px;
+    max-height: 330px;
+    border-radius: 50%;
+    margin-top: 0%;
+    opacity:1
+  }
+
+}
+
+@media only screen and (max-width : 768px) {
+  img.resize {
+    min-width: 240px;
+    min-height: 240px;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+    margin-top: 0%;
+    opacity:1
+  }
+}
+
+.striped-border {
+    border: 2px dashed #aa66cc;
+    min-width: 300px;
+    width: 35%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.parallax1 {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("../img/ParallaxBackground1.jpg");
+}
+
+.parallax1 p {
+  font-size: 16px;
+  color:#666;
+  text-align: left;
+}
+
+/* Heading for Parallax Section */
+.parallax1 h1 {
+  color: rgba(255,255,255,1);
+  font-size: 60px;
+  text-align: center;
+  line-height: 100px;
+  text-shadow: 4px 3px 0px rgba(0,0,0,0.3);
+}
+
+.parallax1 h3 {
+  color: rgba(255,255,255,1);
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 20px;
+  text-shadow: 4px 3px 0px rgba(0,0,0,0.3);
+}
+
+.card {
+  border: 5px solid #aa66cc;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.card {
+  margin-left: 6.25%;
+  width: 87.5%;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-text{
+  transition: all 0.4s ease-in-out;
+}
+
+.image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.card img {
+  border-radius: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.striped-border2 {
+    border: 2px dashed #aa66cc;
+    min-width: 70px;
+    width: 70%;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+  background-color: #282e34;
+  color: #fff;
+}
+
+.parallax1 .card:hover {
+  background-color:#000;
+  color: #fff;
+}
+
+.card:hover .card-text{
+  color: #fff;
+}
+
+.card:hover img{
+  transform: scale(1.08);
+}
+
+.card .btn {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.btn-primary{
+  background-color: #aa66cc;
+  border-color: #aa66cc;
+}
+
+.btn-primary:hover {
+  background-color: #9e52cf;
+  border-color: #aa66cc;
 }
 
 .section-dark{
@@ -149,127 +292,93 @@ body, html{
   font-weight: bold;
 }
 
-
-.navbar {
-  width: 100%;
-  box-shadow: 0px 0px 4px 5px rgba(0,0,0,0.08);
+@media (min-width: 900px) {
+   .padding {
+     padding: 4rem 6rem;
+   }
 }
 
-.navbar-dark{
-  background-color: #aa66cc;
-  width: 100%;
-  border-width: 0;
+.parallax2 {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("../img/ParallaxBackground2.jpg");
 }
 
-.navbar-dark .navbar-nav .nav-link{
-  color: #fff;
+.parallax2 p {
+  font-size: 16px;
+  color:#666;
+  text-align: left;
 }
 
-.secondary-color {
-  color: #fff;
+/* Heading for Parallax Section */
+.parallax2 h1 {
+  color: rgba(255,255,255,1);
+  font-size: 60px;
+  text-align: center;
+  line-height: 100px;
+  text-shadow: 4px 3px 0px rgba(0,0,0,0.3);
 }
 
-.mb-1 {
-  margin-bottom: 0;
-  max-width: 100%;
-  padding-left: 0;
-  padding-right: 0;
+.parallax2 h3 {
+  color: rgba(255,255,255,1);
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 20px;
+  text-shadow: 4px 3px 0px rgba(0,0,0,0.3);
 }
 
-.mb-1, .my-1 {
-  margin-bottom: 0;
+.parallax3 {
+  min-height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("../img/ParallaxBackground3.jpg");
 }
 
-.card {
-  border: 5px solid #aa66cc;
-  overflow: hidden;
-  transition: all 0.4s ease-in-out;
+.parallax3 p {
+  font-size: 16px;
+  color:#666;
+  text-align: left;
 }
 
-.card-title {
-  font-weight: 600;
+/* Heading for Parallax Section */
+.parallax3 h1 {
+  color: rgba(255,255,255,1);
+  font-size: 60px;
+  text-align: center;
+  line-height: 100px;
+  text-shadow: 4px 3px 0px rgba(0,0,0,0.3);
 }
 
-.card img {
-  border-radius: 0;
-  transition: all 0.4s ease-in-out;
+.parallax3 h3 {
+  color: rgba(255,255,255,1);
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 20px;
+  text-shadow: 4px 3px 0px rgba(0,0,0,0.3);
 }
 
-.card:hover {
-  box-shadow: 5px 3px 2px rgba(0,0,0,0.2);
-}
-
-.card:hover img{
-  transform: scale(1.08);
-}
-
-.image-container {
-  width: 100%;
-  overflow: hidden;
-}
-
-.btn-primary{
-  background-color: #aa66cc;
-  border-color: #aa66cc;
-}
-
-.btn-primary:hover {
-  background-color: #9e52cf;
-  border-color: #aa66cc;
-}
-
-.vertical-align-middle {
-    vertical-align: middle;
-}
-
-.padding-bottom-3 {
-    padding-bottom: 3px;
-}
-
-.marginbm {
-  margin-bottom: 50px;
-}
-
-img.resize {
+img.resize2 {
+  min-width: 100%;
+  min-height: 100%;
   max-width: 100%;
   max-height: 100%;
   border-radius: 50%;
-}
-
-img.shadows {
-  box-shadow: 5px 3px 2px rgba(0,0,0,0.2);
-}
-
-.striped-border {
-    border: 2px dashed #aa66cc;
-    min-width: 300px;
-    width: 35%;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.imageposition {
-  position: 50%, 50vh;
-}
-
-.paralsec img{
-  position: absolute;
-  --a: 50vh;
-  --b: 8vw;
-  top:calc(var(--a) - var(--b));
-  left: 10vw;
-  width: 80vw;
-  height: 16vw;
-  Opacity: 0.75;
+  opacity:1
 }
 
 .project {
   padding: 0px;
   position: relative;
   text-align: center;
-  color: white;
+  background-color: #000;
+  border-radius: 50%;
   transition: all 0.4s ease-in-out;
+  overflow: hidden;
 }
 
 .project img {
@@ -293,18 +402,17 @@ img.shadows {
 }
 
 .project:hover img {
-  opacity: 0.4;
+  opacity: 0.65;
   -webkit-filter: blur(7px); /* Safari 6.0 - 9.0 */
   filter: blur(7px);
 }
 
-img.resize2 {
-  min-width: 100%;
-  min-height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 50%;
-  opacity:1
+.vertical-align-middle {
+    vertical-align: middle;
+}
+
+.padding-bottom-3 {
+    padding-bottom: 3px;
 }
 
 .section-dark a {
@@ -312,39 +420,7 @@ img.resize2 {
   text-decoration: inherit; /* no underline */
 }
 
-@media (min-width: 900px) {
-   .jumbotron{
-     padding: 4rem 6rem;
-   }
-
-   .centered {
-     font-size: 30px;
-   }
-
-
-
-}
-
-@media only screen and (max-width : 992px) {
-  img.resize {
-    min-width: 320px;
-    min-height: 320px;
-    max-width: 330px;
-    max-height: 330px;
-    border-radius: 50%;
-    opacity:1
-  }
-}
-
 @media only screen and (max-width : 768px) {
-  img.resize {
-    min-width: 240px;
-    min-height: 240px;
-    max-width: 250px;
-    max-height: 250px;
-    border-radius: 50%;
-    opacity:1
-  }
 
   img.resize2 {
     min-width: 240px;
@@ -353,6 +429,14 @@ img.resize2 {
     max-height: 250px;
     border-radius: 50%;
     opacity:1
+  }
+
+  .project {
+    min-width: 240px;
+    min-height: 240px;
+    max-width: 250px;
+    max-height: 250px;
+    margin-bottom: 30px;
   }
 
   .card {

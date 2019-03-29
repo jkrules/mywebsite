@@ -1,56 +1,68 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta Tags for Bootstrap 4 -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" type="image/png" sizes="64x64" href="img/Icon.png">
-  <meta name=”theme-color” content=”#aa66cc″>
-  <title>Joel Kandiah</title>
-  <!-- Bootstrap 4 CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+ <!-- Meta Tags for Bootstrap 4 -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <link rel="icon" type="image/png" sizes="64x64" href="img/Icon.png">
+ <meta name=”theme-color” content=”#aa66cc″>
+ <title>Joel Kandiah</title>
+ <!-- Bootstrap 4 CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+ <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<div class="container mb-1">
-  <nav class="navbar navbar-expand-lg navbar-dark secondary-color fixed-top">
-    <a class="navbar-brand" href="#"><strong>Joel Kandiah</strong></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-6"
-      aria-controls="navbarSupportedContent-6" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent-6">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#WhoAmI"> Who am I? <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Experience"> Experience </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Education"> Education </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Coding"> Programming </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Contact"> Contact me</a>
-        </li>
-    </div>
-  </nav>
-</div>
+<!--Navbar-->
+<div class="container mynav-1">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark primary-color">
 
-  <!-- First Parallax Section -->
-  <div class="jumbotron parah paralsec">
-      <img align= "middle" src="img/Title2.png">
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#">Joel Kandiah</a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#WhoAmI"> Who am I? <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Experience"> Experience </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Education"> Education </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Coding"> Programming </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Contact"> Contact me</a>
+      </li>
+
   </div>
+</div>
+  <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+
+<body>
+  <header class="MyTitle">
+    <div class="logo"></div>
+  </header>
 
   <a name="WhoAmI"></a>
   <section class="jumbotron section-light">
     <div class="row">
-      <div class="mx-auto col-lg-4 mx-auto">
+      <div class="mx-auto col-lg-3 mx-auto">
         <img class="resize shadows" src="img/Headshot.png" alt="Headshot">
       </div>
       <div class="mx-auto col-lg-7 mx-auto">
@@ -66,83 +78,83 @@
     </div>
   </section>
 
-<!-- Second Parallax Section -->
-<a name="Experience"></a>
-<div class="jumbotron paral paralsec1">
-  <h1 class="display-3">
-    Where have I done work experience?
-  </h1>
-  <div class="row">
-    <div class="col-md-4 mx-auto">
-     <p class="lead">
-       <div class="card">
-         <div class="image-container">
-           <img class="card-img-top" src="img/SolidStateLogic.jpg" alt="Card image">
+  <a name="Experience"></a>
+  <div class="jumbotron parallax1">
+    <h1 class="display-3">
+      Where have I done work experience?
+    </h1>
+    <div class="row">
+      <div class="col-md-4 mx-auto">
+       <p class="lead">
+         <div class="card">
+           <div class="image-container">
+             <img class="card-img-top" src="img/SolidStateLogic.jpg" alt="Card image">
+           </div>
+           <div class="card-body">
+             <h4 class="card-title">Solid State Logic</h4>
+             <div class="striped-border2"></div>
+             <p class="card-text">
+               A global manafacturer of digital and analogue sound desks and some video production.
+             </p>
+             <a href="https://www.solidstatelogic.com/" class="btn btn-primary">See Website</a>
+           </div>
          </div>
-         <div class="card-body">
-           <h4 class="card-title">Solid State Logic</h4>
-           <p class="card-text">
-             A global manafacturer of digital and analogue sound desks and some video production.
-           </p>
-           <a href="https://www.solidstatelogic.com/" class="btn btn-primary">See Website</a>
-         </div>
-       </div>
-     </p>
-   </div>
-   <div class="col-md-4 mx-auto">
-    <p class="lead">
-      <div class="card">
-        <div class="image-container">
-          <img class="card-img-top" src="img/faculty.jpg" alt="Card image">
+       </p>
+     </div>
+     <div class="col-md-4 mx-auto">
+      <p class="lead">
+        <div class="card">
+          <div class="image-container">
+            <img class="card-img-top" src="img/faculty.jpg" alt="Card image">
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Faculty</h4>
+            <div class="striped-border2"></div>
+            <p class="card-text">
+               An organisation focused on helping businesses apply AI to real world usage.
+             </p>
+            <a href="http://faculty.ai" class="btn btn-primary">See Website</a>
+          </div>
         </div>
-        <div class="card-body">
-          <h4 class="card-title">Faculty</h4>
-          <p class="card-text">
-             An organisation focused on helping businesses apply AI to real world usage.
-           </p>
-          <a href="http://faculty.ai" class="btn btn-primary">See Website</a>
-        </div>
-      </div>
-    </p>
+      </p>
+    </div>
+    </div>
   </div>
-  </div>
-</div>
 
-<section class="jumbotron section-dark">
-  <h2>Experience</h2>
-  <div class="striped-border"></div>
-    <h6>
-      Solid State Logic (2015)
-    </h6>
-    <p>
-       Short term work experience configuring sound desks at a world class audio technical company.
-    </p>
-    <h6>
-      PA Supervisor (Volunteer) 2015-2017 & Tech Team Leader (Volunteer) 2018-2019
-    </h6>
-    <p>
-       As a PA supervisor work involved weekly set up, sound checking, monitoring and pack down of all PA system, microphones, mixing desk and other equipment for Cornerstone Church, Thame.
-    </p>
-    <p>
-       At Warwick University Christian Union, I have become Tech team leader. This involves all the above roles as a PA supervisor, but with the additional work of events planning and equipment hire as well as running basic visuals software.
-    </p>
-    <h6>
-       Programming (2018/19)
-    </h6>
-    <p>
-       During my first year at Warwick I completed 2 programming modules (MA117 Programming for scientists and PX150 Physics Programming) attaining a strong first in both. During this current year I have completed 2 more (PX267 Computational Physics and MA228 Numerical Analysis), with pre-moderation marking both at strong firsts. These modules have given me a good basis for programming in python, java and R, as well as a good understanding of translating mathematical solutions and physical problems into a computational environment.
-    </p>
-    <h6>
-       Faculty (2019)
-    </h6>
-    <p>
-       Short term work experience doing research for some projects and for the marketing team at a company working on integrating AI solutions for businesses on a consultancy and training basis. A key project I worked on was research into international metro systems.
-    </p>
-</section>
+  <section class="jumbotron padding section-dark">
+    <h2>Experience</h2>
+    <div class="striped-border"></div>
+      <h6>
+        Solid State Logic (2015)
+      </h6>
+      <p>
+         Short term work experience configuring sound desks at a world class audio technical company.
+      </p>
+      <h6>
+        PA Supervisor (Volunteer) 2015-2017 & Tech Team Leader (Volunteer) 2018-2019
+      </h6>
+      <p>
+         As a PA supervisor work involved weekly set up, sound checking, monitoring and pack down of all PA system, microphones, mixing desk and other equipment for Cornerstone Church, Thame.
+      </p>
+      <p>
+         At Warwick University Christian Union, I have become Tech team leader. This involves all the above roles as a PA supervisor, but with the additional work of events planning and equipment hire as well as running basic visuals software.
+      </p>
+      <h6>
+         Programming (2018/19)
+      </h6>
+      <p>
+         During my first year at Warwick I completed 2 programming modules (MA117 Programming for scientists and PX150 Physics Programming) attaining a strong first in both. During this current year I have completed 2 more (PX267 Computational Physics and MA228 Numerical Analysis), with pre-moderation marking both at strong firsts. These modules have given me a good basis for programming in python, java and R, as well as a good understanding of translating mathematical solutions and physical problems into a computational environment.
+      </p>
+      <h6>
+         Faculty (2019)
+      </h6>
+      <p>
+         Short term work experience doing research for some projects and for the marketing team at a company working on integrating AI solutions for businesses on a consultancy and training basis. A key project I worked on was research into international metro systems.
+      </p>
+  </section>
 
-<!-- Third Parallax Section -->
   <a name="Education"></a>
-  <div class="jumbotron paral paralsec2">
+  <div class="jumbotron parallax2">
     <h1 class="display-3">
       Where have I studied?
     </h1>
@@ -154,6 +166,7 @@
           </div>
           <div class="card-body">
             <h4 class="card-title">University of Warwick</h4>
+            <div class="striped-border2"></div>
             <p class="card-text">
                One of the top 50 universities internationally.
              </p>
@@ -164,7 +177,7 @@
     </div>
   </div>
 
-  <section class="jumbotron section-light">
+  <section class="jumbotron padding section-light">
     <h2>Education</h2>
     <div class="striped-border"></div>
     <h6>
@@ -196,7 +209,7 @@
   </section>
 
   <a name="Coding"></a>
-  <section class="jumbotron section-dark">
+  <section class="jumbotron padding section-dark">
     <h2>Programming Experience</h2>
     <div class="striped-border"></div>
       <h6>
@@ -225,7 +238,7 @@
       </p>
   </section>
 
-  <div class="jumbotron paral paralsec3">
+  <div class="jumbotron parallax3">
     <h1 class="display-3">
       What projects have I done?
     </h1>
@@ -234,24 +247,24 @@
       Click the options below to download my projects in each language
     </h3>
     <div class="row">
-     <div class="col-md-3 mx-auto marginbm">
-      <a href="https://docs.google.com/uc?export=download&id=1sajzUopGub17PVzqLX8Ftc4AT5PK8otq">
+     <div class="col-md-3 mx-auto">
       <div class="container project">
-      <img class = "resize2 shadows" src="img/JavaProject1.png">
+        <a href="https://docs.google.com/uc?export=download&id=1sajzUopGub17PVzqLX8Ftc4AT5PK8otq">
+        <img class = "resize2" src="img/JavaProject1.png">
         <div class="centered"> Java Examples </div>
       </div>
      </div>
-     <div class="col-md-3 mx-auto marginbm">
+     <div class="col-md-3 mx-auto">
       <a href="https://docs.google.com/uc?export=download&id=18inQ9rzEhn5NbBj5nlq-QrOYv89_pGxG">
       <div class="container project">
-      <img class = "resize2 shadows" src="img/RProject1.png">
+        <img class = "resize2" src="img/RProject1.png">
         <div class="centered"> R Examples </div>
       </div>
      </div>
-     <div class="col-md-3 mx-auto marginbm">
+     <div class="col-md-3 mx-auto">
       <a href="https://docs.google.com/uc?export=download&id=1ywWpmFOH0qkIj8mwP2SHD9Dr_4mB5XrE">
       <div class="container project">
-      <img class = "resize2 shadows" src="img/PythonProject1.png">
+        <img class = "resize2" src="img/PythonProject1.png">
         <div class="centered"> Python Examples </div>
       </div>
      </div>
@@ -294,8 +307,6 @@
     </div>
   </section>
 
-  <!-- Add More Parallax Sections Here -->
-  <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <!-- Popper JS -->
@@ -303,6 +314,7 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 
 </body>
 
