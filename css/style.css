@@ -243,10 +243,6 @@ img.shadows {
   color: #fff;
 }
 
-.parallax1 .card:hover {
-  background-color:#000;
-  color: #fff;
-}
 
 .card:hover .card-text{
   color: #fff;
