@@ -240,6 +240,11 @@ img.shadows {
     margin-bottom: 20px;
 }
 
+.card-footer {
+  background-color: rgba(0,0,0,0.1);
+  border-top: 1px solid rgba(0,0,0,0.2);
+}
+
 .card:hover {
   background-color: #282e34;
   color: #fff;
