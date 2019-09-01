@@ -53,11 +53,11 @@ background-image: url("https://mdbootstrap.com/img/svg/hamburger7.svg?color=fff"
 .MyTitle {
     position: relative;
     height: 100vh;
+    max-height: 100vh !important;
     background-image: url("../img/Titleimage.jpg");
     background-size:  cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     overflow: hidden;
 }
 
