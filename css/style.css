@@ -12,6 +12,10 @@ body, html{
   color:#666;
 }
 
+.InlineLink {
+  color:#aa66cc !important;
+}
+
 .primary-color {
   background-color: #aa66cc;
 }
